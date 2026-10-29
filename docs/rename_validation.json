@@ -1,0 +1,29 @@
+{
+  "project": "RiskWeave",
+  "episodes_compared": 750,
+  "non_timing_metrics_identical": true,
+  "excluded_measurement_fields": [
+    "scheduler_wall_seconds"
+  ],
+  "algorithm_core_bytes_identical": true,
+  "algorithm_core_sha256": "561cc92d8f220639317ae4eff996827103fb576b308ab6d8a55d04de5ccff876",
+  "prior_records_preserved_without_rewriting": true,
+  "unit_checks_passed": 26,
+  "randomized_state_events_passed": 5000,
+  "ros_rename_check": {
+    "passed": true,
+    "packages_built": 13,
+    "console_package": "riskweave_console",
+    "decision_node": "riskweave_replanner",
+    "events_processed": 2,
+    "world_physics_passed": true,
+    "world_observed_iterations": 327
+  },
+  "workspace_cutover": {
+    "completed": true,
+    "canonical_directory_name": "RiskWeave",
+    "compatibility_shell_preserved": true,
+    "prior_project_files_hash_verified": 1137,
+    "prior_raw_experiment_hashes_verified": true
+  }
+}

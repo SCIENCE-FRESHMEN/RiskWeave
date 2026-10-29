@@ -1,0 +1,7 @@
+[
+  {"id": "start", "time": 0, "relevant": true},
+  {"id": "nuisance", "time": 1, "relevant": true},
+  {"id": "carrier_failure", "time": 2, "relevant": true, "observations": [{"robot": "delivery_bot", "skill": "carry", "success": false}], "availability": {"delivery_bot": false}},
+  {"id": "emergency", "time": 3, "emergency": true},
+  {"id": "resume", "time": 4, "resume": true, "relevant": true}
+]

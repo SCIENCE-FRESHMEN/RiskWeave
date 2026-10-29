@@ -1,0 +1,38 @@
+{
+  "scope": "Nonessential decorative raster photos and phone screenshot; no facial identification performed",
+  "removed_images": [
+    "riskweave/robots/multi_robot/models/MaleVisitorSit/meshes/Phone.png",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/materials/textures/DeskPortraitA_02.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/materials/textures/DeskPortraitD_04.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitA_01/materials/textures/PortraitA_01.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitA_02/materials/textures/PortraitA_02.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_01/materials/textures/PortraitB_01.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_02/materials/textures/PortraitB_02.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_03/materials/textures/PortraitB_03.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitC_01/materials/textures/PortraitC_01.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitE_01/materials/textures/PortraitE_01.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitE_02/materials/textures/PortraitE_02.jpg",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_TV_01/materials/textures/aws_TV_01.png",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_TV_02/materials/textures/aws_TV_01.png"
+  ],
+  "material_files_changed": [
+    "riskweave/robots/multi_robot/models/MaleVisitorSit/meshes/MaleVisitorSit.mtl",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_DeskPortraitA_02/meshes/aws_DeskPortraitA_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_DeskPortraitD_04/meshes/aws_DeskPortraitD_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_01/meshes/aws_PortraitB_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_02/meshes/aws_PortraitB_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitB_03/meshes/aws_PortraitB_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitC_01/meshes/aws_PortraitC_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_TV_01/meshes/aws_TV_01_visual.DAE",
+    "riskweave/robots/yahboom/yahboom_rosmaster_gazebo/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_visual.DAE"
+  ],
+  "geometry_unchanged": true,
+  "treatment": "Image files archived outside project and removed; material code uses a plain color; no replacement photos generated",
+  "copyright_headers_retained": true,
+  "path_basis": "Current renamed source layout; unchanged original record archived outside the project.",
+  "project": "RiskWeave"
+}

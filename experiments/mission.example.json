@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "kind": "synthetic_engineering_example",
+    "description": "Hand-authored finite dispatch mission; no paper labels or real robot measurements.",
+    "horizon": 12,
+    "durations": {"inspect_entrance": 3, "deliver_water": 3, "clean_floor": 2, "inspect_exit": 3, "deliver_food": 3, "clean_table": 2}
+  },
+  "config": {
+    "risk_budget": 0.5,
+    "posterior_tail_probability": 0.1,
+    "evidence_decay": 0.8,
+    "planning_cost": 0.4,
+    "communication_cost": 0.1,
+    "switching_cost": 0.1,
+    "planning_budget": 20.0,
+    "fixed_period": 2.0
+  },
+  "robots": [
+    {"id": "cleaning_bot", "skills": {"clean": {"alpha": 19, "beta": 1}, "carry": {"alpha": 7, "beta": 3}}},
+    {"id": "delivery_bot", "skills": {"carry": {"alpha": 19, "beta": 1}}},
+    {"id": "drone", "skills": {"inspect": {"alpha": 19, "beta": 1}}}
+  ],
+  "goals": [
+    {"id": "inspect_entrance", "skill": "inspect", "value": 10, "description": "Inspect the entrance", "required": true, "harm_probability": 0.01, "deadline": 12},
+    {"id": "deliver_water", "skill": "carry", "value": 15, "description": "Deliver water to table 1", "required": true, "harm_probability": 0.1, "failure_loss": 4, "deadline": 12},
+    {"id": "clean_floor", "skill": "clean", "value": 0.3, "description": "Clean the floor", "harm_probability": 0.03, "execution_cost": 0.1, "deadline": 12},
+    {"id": "inspect_exit", "skill": "inspect", "value": 10, "description": "Inspect the exit", "required": true, "release": 4, "harm_probability": 0.01, "deadline": 12},
+    {"id": "deliver_food", "skill": "carry", "value": 12, "description": "Deliver food to table 2", "required": true, "release": 4, "harm_probability": 0.1, "failure_loss": 4, "deadline": 12},
+    {"id": "clean_table", "skill": "clean", "value": 0.3, "description": "Clean table 3", "dependencies": ["deliver_food"], "harm_probability": 0.03, "execution_cost": 0.1, "deadline": 12}
+  ]
+}

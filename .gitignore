@@ -1,0 +1,27 @@
+.vscode/
+__pycache__/
+
+# data/
+
+esp32*.cpp
+esp32*.py
+
+
+data2
+
+# Local credentials and private runtime data
+.env
+.env.*
+!.env.example
+**/data/*.txt
+**/data2/
+.riskweave/
+log/
+logs/
+*.log
+build/
+install/
+.DS_Store
+Thumbs.db
+artifacts/
+.pytest_cache/

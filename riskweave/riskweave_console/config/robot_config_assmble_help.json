@@ -1,0 +1,38 @@
+{
+  "robot_names": ["lerobot", "burger"],
+
+  "robot_capabilities": {
+    "lerobot": "A robotic arm with 5 DOF. It has a gripper (end effector) to hold items. The robot can pick and place the objects.",
+    "burger": "A mobile robot with 2 Wheel Drive, can move on 2D plane, can goto specific location, can find objects in its vicinity (within 1 meter radius), cannot pick and place objects."
+  },
+
+  "robot_morphology": {
+    "lerobot": "Payload: 500 g, Reach: 0.4 m, Degrees of Freedom: 5" ,
+    "burger": " Payload: ~8 kg (max ~12 kg), Speed: 0 ~ 3.7 m/s (max ~5 m/s), Weight: 15kg, Size: 700 x 310 x 400 mm"
+   },
+
+  "robot_states": {
+    "lerobot": {
+      "relative_position": "Fixed",
+      "relative_orientation": "Facing forward",
+      "carry_state": "Empty",
+      "arm_state": "Stowed",
+      "mode": "Idle"
+    },
+    "burger": {
+        "relative_position": "None",
+        "relative_orientation": "None",
+        "carry_state": "Empty",
+        "mode": "Idle"
+    }
+
+  },
+
+  "task_specific_rules": [
+    ""
+  ],
+
+  "task_replanning_rules": [
+    ""
+  ]
+}

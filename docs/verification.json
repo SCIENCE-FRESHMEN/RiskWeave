@@ -1,0 +1,104 @@
+{
+  "scope": "Current workspace UTF-8 text, syntax and selected local resource references",
+  "counts": {
+    "python": 80,
+    "json": 69,
+    "xml": 507,
+    "utf8_files_scanned": 814
+  },
+  "project": "RiskWeave",
+  "console_package": "riskweave_console",
+  "retired_identifiers_allowed_only_in_attribution": true,
+  "package_mesh_references_checked": 7,
+  "errors": [],
+  "dependencies_available": {
+    "rclpy": false,
+    "launch": false,
+    "colcon_core": false
+  },
+  "limitations": [
+    "This checker does not exercise ROS, Gazebo, physical robots or cloud APIs; see environment_probe.json for separate checks.",
+    "Credential matching is heuristic; binary payloads and image pixels are not scanned.",
+    "Third-party public attribution and contact metadata are retained.",
+    "A procedural occupant proxy replaces a missing upstream mesh; original visual equivalence is not established.",
+    "Decorative photos/screenshots were removed by editing material bindings; full high-resolution OCR was not run."
+  ],
+  "date": "2026-10-29",
+  "unit_checks": {
+    "runtime_storage": 4,
+    "selective_and_provider_contract": 20,
+    "fortress_overlay": 2,
+    "total": 26
+  },
+  "randomized_state_invariants": {
+    "missions": 100,
+    "events": 5000,
+    "passed": true
+  },
+  "benchmark_rename_equivalence": {
+    "project": "RiskWeave",
+    "episodes_compared": 750,
+    "non_timing_metrics_identical": true,
+    "excluded_measurement_fields": [
+      "scheduler_wall_seconds"
+    ],
+    "algorithm_core_bytes_identical": true,
+    "algorithm_core_sha256": "561cc92d8f220639317ae4eff996827103fb576b308ab6d8a55d04de5ccff876",
+    "prior_records_preserved_without_rewriting": true,
+    "unit_checks_passed": 26,
+    "randomized_state_events_passed": 5000,
+    "ros_rename_check": {
+      "passed": true,
+      "packages_built": 13,
+      "console_package": "riskweave_console",
+      "decision_node": "riskweave_replanner",
+      "events_processed": 2,
+      "world_physics_passed": true,
+      "world_observed_iterations": 327
+    },
+    "workspace_cutover": {
+      "completed": true,
+      "canonical_directory_name": "RiskWeave",
+      "compatibility_shell_preserved": true,
+      "prior_project_files_hash_verified": 1137,
+      "prior_raw_experiment_hashes_verified": true
+    }
+  },
+  "resource_graph": {
+    "kind": "static_resource_graph",
+    "files_checked": 48,
+    "worlds": [
+      "riskweave/robots/multi_robot/worlds/food_court.sdf",
+      "riskweave/robots/multi_robot/worlds/foodcourt_world.sdf",
+      "riskweave/robots/multi_robot/worlds/foodcourt_world_small.sdf"
+    ],
+    "missing": [],
+    "external": [],
+    "limitations": "No plugin library, SDF runtime semantics, rendering or physics validation."
+  },
+  "environment_checks": {
+    "packages_built": 13,
+    "console_package": "riskweave_console",
+    "actual_ros_events": 2,
+    "world_physics_smoke_passed": true,
+    "gui_fps_measured": false,
+    "full_robot_llm_vlm_pipeline_run": false,
+    "details": "docs/environment_probe.json"
+  },
+  "preservation_checks": {
+    "image_assets_unchanged": 314,
+    "licenses_unchanged": 2,
+    "original_test_files_unchanged": 11,
+    "core_algorithm_bytes_identical": true
+  },
+  "project_identity": "project.json",
+  "change_summary": {
+    "modify": 26,
+    "add": 2,
+    "rename_and_modify": 19,
+    "rename": 1079,
+    "regenerate": 2
+  },
+  "historical_project_archived_outside_workspace": true,
+  "compatibility_shell_for_current_chat": true
+}

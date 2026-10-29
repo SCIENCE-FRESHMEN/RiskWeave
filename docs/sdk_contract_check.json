@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "checks": [
+    {
+      "package": "openai",
+      "version": "1.66.3",
+      "distribution_sha256": "a427c920f727711877ab17c11b95f1230b27767ba7a01e5b66102945141ceca9",
+      "package_metadata_url": "https://pypi.org/pypi/openai/1.66.3/json",
+      "findings": {
+        "responses_resource_present": true,
+        "response_output_text_property": true,
+        "requested_version_preserved": true
+      },
+      "scope": "Published SDK source inspection only; no cloud API request"
+    },
+    {
+      "package": "ollama",
+      "version": "0.4.8",
+      "distribution_sha256": "04312af2c5e72449aaebac4a2776f52ef010877c554103419d3f36066fe8af4c",
+      "package_metadata_url": "https://pypi.org/pypi/ollama/0.4.8/json",
+      "findings": {
+        "chat_response_type": true,
+        "prompt_eval_count_field": true,
+        "eval_count_field": true
+      },
+      "scope": "Published SDK source inspection only; no cloud API request"
+    }
+  ]
+}

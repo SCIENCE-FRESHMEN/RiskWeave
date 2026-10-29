@@ -1,0 +1,17 @@
+{
+  "name": "RiskWeave",
+  "slug": "riskweave",
+  "name_zh": "风险与成本约束的多机器人选择性重规划",
+  "source_directory": "riskweave",
+  "console_package": "riskweave_console",
+  "runtime_data_env": "RISKWEAVE_DATA_DIR",
+  "python_env": "RISKWEAVE_PYTHON",
+  "default_runtime_directory": "~/.riskweave/data",
+  "docker_image": "riskweave-research:local",
+  "gui_title": "RiskWeave",
+  "main_launch": "riskweave.launch.py",
+  "replanning_launch": "riskweave_replanning.launch.py",
+  "replanning_executable": "riskweave_replanner",
+  "topic_prefix": "/riskweave/replanning/",
+  "attribution": "docs/ORIGIN.md"
+}

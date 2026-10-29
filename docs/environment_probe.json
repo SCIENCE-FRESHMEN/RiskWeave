@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-29",
+  "windows_gpu": "Intel Iris Xe Graphics",
+  "driver_version": "32.0.101.7088",
+  "wsl_distribution": "Ubuntu-24.04",
+  "wsl_ros2_installed": false,
+  "wsl_gazebo_installed": false,
+  "docker_daemon_reachable": true,
+  "wslg_present": true,
+  "egl_exit_code": 0,
+  "egl_probe": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "version": "4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2",
+    "kind": "EGL_256x256_clear_finish_smoke",
+    "iterations": 200,
+    "elapsed_seconds": 0.09323593900000038,
+    "limitation": "Offscreen clear only; does not measure scene rendering, sensors, physics or Gazebo FPS."
+  },
+  "full_simulation_run": false,
+  "egl_probe_first_attempt": {
+    "kind": "EGL_probe_failed",
+    "error": "libGLESv2.so.2: cannot open shared object file: No such file or directory"
+  },
+  "docker_version": "29.9.2",
+  "container_build": {
+    "status": "success",
+    "docker_hub_attempt": "TLS handshake timeout",
+    "base_image": "public.ecr.aws/docker/library/ros@sha256:a3f4de78e42cca693a543ece5798aedcf1cae0171fe71c334a047332cc72ef93",
+    "platform": "linux/amd64",
+    "image_id": "sha256:4d275e7120071ac00a25cb7b8b888c947afd151bddb2115593e154d68d082de4",
+    "image_size_bytes": 4390317963,
+    "image_tag": "riskweave-research:local",
+    "source_not_embedded": true
+  },
+  "egl_explicit_d3d12": {
+    "exit_code": 0,
+    "probe": {
+      "vendor": "Microsoft Corporation",
+      "renderer": "D3D12 (Intel(R) Iris(R) Xe Graphics)",
+      "version": "4.1 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2",
+      "kind": "EGL_256x256_clear_finish_smoke",
+      "iterations": 200,
+      "elapsed_seconds": 0.25844283899994025,
+      "limitation": "Offscreen clear only; does not measure scene rendering, sensors, physics or Gazebo FPS."
+    },
+    "stderr_present": true
+  },
+  "actual_ros_transport_smoke": {
+    "kind": "actual_ros_transport_smoke",
+    "passed": true,
+    "events_processed": 2,
+    "robot_execution_connected": false
+  },
+  "research_tests": {
+    "windows": {
+      "passed": 20
+    },
+    "wsl_python_3_12": {
+      "passed": 20
+    },
+    "ros_humble_python_3_10": {
+      "passed": 20
+    }
+  },
+  "colcon_build": {
+    "passed": true,
+    "packages_finished": 13,
+    "console_package": "riskweave_console",
+    "log": "artifacts/ros/container_run.log",
+    "source_copy_overlay": "Fortress_identifier_overlay; host source not rewritten"
+  },
+  "headless_world_smoke": {
+    "kind": "headless_gazebo_world_physics_smoke",
+    "passed": true,
+    "world": "food_court.sdf",
+    "max_observed_iterations": 327,
+    "statistics_sample": "sim_time {\n  nsec: 7000000\n}\nreal_time {\n  sec: 1\n  nsec: 388950393\n}\niterations: 7\nreal_time_factor: 0.0377\n\nsim_time {\n  nsec: 24000000\n}\nreal_time {\n  sec: 1\n  nsec: 490390834\n}\niterations: 24\nreal_time_factor: 0.1795\n\nsim_time {\n  nsec: 39000000\n}\nreal_time {\n  sec: 1\n  nsec: 595321029\n}\niterations: 39\nreal_time_factor: 0.1533\n\nsim_time {\n  nsec: 52000000\n}\nreal_time {\n  sec: 1\n  nsec: 698139623\n}\niterations: 52\nreal_time_factor: 0.133\n\nsim_time {\n  nsec: 63000000\n}\nreal_time {\n  sec: 1\n  nsec: 799114124\n}\niterations: 63\nreal_time_factor: 0.1153\n\nsim_time {\n  nsec: 74000000\n}\nreal_time {\n  sec: 1\n  nsec: 905293673\n}\niterations: 74\nreal_time_factor: 0.1078\n\nsim_time {\n  nsec: 85000000\n}\nreal_time {\n  sec: 2\n  nsec: 8541837\n}\niterations: 85\nreal_time_factor: 0.1013\n\nsim_time {\n  nsec: 99000000\n}\nreal_time {\n  sec: 2\n  nsec: 115463571\n}\niterations: 99\nreal_time_factor: 0.1158\n\nsim_time {\n  nsec: 114000000\n}\nreal_time {\n  sec: 2\n  nsec: 215543947\n}\niterations: 114\nreal_time_factor: 0.1514\n\nsim_time {\n  nsec: 129000000\n}\nreal_time {\n  sec: 2\n  nsec: 316031218\n}\niterations: 129\nreal_time_factor: 0.1458\n\nsim_time {\n  nsec: 143000000\n}\nreal_time {\n  sec: 2\n  nsec: 418854692\n}\niterations: 143\nreal_time_factor: 0.1471\n\nsim_time {\n  nsec: 155000000\n}\nreal_time {\n  sec: 2\n  nsec: 525989175\n}\niterations: 155\nreal_time_factor: 0.1272\n\nsim_time {\n  nsec: 167000000\n}\nreal_time {\n  sec: 2\n  nsec: 628874514\n}\niterations: 167\nreal_time_factor: 0.1147\n\nsim_time {\n  nsec: 179000000\n}\nreal_tim",
+    "robot_execution_experiment": false,
+    "gui_fps_measured": false,
+    "limitation": "World server progress only; no spawned robot control, VLM or selective replanning evaluation.",
+    "available_startup_rtf_excerpt": [
+      0.0377,
+      0.1795,
+      0.1533,
+      0.133,
+      0.1153,
+      0.1078,
+      0.1013,
+      0.1158,
+      0.1514,
+      0.1458,
+      0.1471,
+      0.1272,
+      0.1147
+    ]
+  },
+  "full_robot_llm_vlm_pipeline_run": false,
+  "cloud_model_requests": 0,
+  "gui_fps_measured": false,
+  "project": "RiskWeave",
+  "rename_validation": "docs/rename_validation.json"
+}

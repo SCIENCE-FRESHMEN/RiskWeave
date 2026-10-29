@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-29",
+  "repository_url": "https://api.github.com/repos/CoMuRoS/CoMuRoS",
+  "repository_license_field": null,
+  "license_endpoint": "https://api.github.com/repos/CoMuRoS/CoMuRoS/license",
+  "license_endpoint_http_status": 404,
+  "interpretation": "No upstream repository license declaration was found; no license was invented or inferred from the paper."
+}
