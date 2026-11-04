@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<sdf version="1.6"><model name="research_occupant_proxy"><static>true</static>
+<link name="body"><visual name="procedural_proxy"><geometry><mesh>
+<uri>model://sitting_human_01/meshes/sitting_human.obj</uri><scale>0.01 0.01 0.01</scale>
+</mesh></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+</visual></link></model></sdf>

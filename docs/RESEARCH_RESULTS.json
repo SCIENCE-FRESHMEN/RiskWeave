@@ -1,0 +1,1683 @@
+{
+  "kind": "synthetic_discrete_dispatch_benchmark",
+  "episodes": 750,
+  "seeds_per_regime": 50,
+  "regimes": [
+    "stable",
+    "nuisance",
+    "capability_drift",
+    "unrecoverable",
+    "high_call_cost"
+  ],
+  "seed_start": 1000,
+  "seed_end_inclusive": 1049,
+  "paired_interval_unit": "Independent seed, after averaging the fixed regimes within each seed",
+  "mission_sha256": "dcfdd7857009e49e480917b5018bf79abdb3ae36e112bcac74c348275b0316fa",
+  "source_sha256": {
+    "riskweave/riskweave_console/riskweave_console/selective/core.py": "561cc92d8f220639317ae4eff996827103fb576b308ab6d8a55d04de5ccff876",
+    "tools/run_selective_benchmark.py": "22a0313013ecda1d4804e573d5f332ac17d4fac992a5ed3d31772e8638893da0"
+  },
+  "model_sdk_calls": 0,
+  "groups": {
+    "stable": {
+      "fixed": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.68,
+          "ci95": [
+            0.5418944286372394,
+            0.792419559060006
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.92,
+          "ci95": [
+            0.8847798037736554,
+            0.9552201962263447
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9334873949579832,
+          "ci95": [
+            0.8997387597170903,
+            0.967236030198876
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 4.9,
+          "ci95": [
+            4.816000000000001,
+            4.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 3.9,
+          "ci95": [
+            3.816,
+            3.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 2.45,
+          "ci95": [
+            2.4080000000000004,
+            2.492
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 41.153999999999996,
+          "ci95": [
+            39.24187911846557,
+            43.066120881534424
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10942.88,
+          "ci95": [
+            10915.558160694418,
+            10970.20183930558
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0007703280009445734,
+          "ci95": [
+            0.0006760091570215108,
+            0.0008646468448676361
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "event": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.68,
+          "ci95": [
+            0.5418944286372394,
+            0.792419559060006
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.92,
+          "ci95": [
+            0.8847798037736554,
+            0.9552201962263447
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9334873949579832,
+          "ci95": [
+            0.8997387597170903,
+            0.967236030198876
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 3.9,
+          "ci95": [
+            3.816,
+            3.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 2.9,
+          "ci95": [
+            2.816,
+            2.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.95,
+          "ci95": [
+            1.908,
+            1.992
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 41.653999999999996,
+          "ci95": [
+            39.74187911846557,
+            43.566120881534424
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10922.12,
+          "ci95": [
+            10896.14072905103,
+            10948.099270948971
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006829619994095992,
+          "ci95": [
+            0.000613048731398107,
+            0.0007528752674210913
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "selective": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.7833333333333333,
+          "ci95": [
+            0.7582025642333723,
+            0.8084641024332944
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9283193277310923,
+          "ci95": [
+            0.8948678931204713,
+            0.9617707623417132
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 42.44799999999999,
+          "ci95": [
+            40.522176039613164,
+            44.37382396038682
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10686.18,
+          "ci95": [
+            10680.711265243222,
+            10691.648734756778
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006133959982253146,
+          "ci95": [
+            0.0005347122315592626,
+            0.0006920797648913666
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      }
+    },
+    "nuisance": {
+      "fixed": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.68,
+          "ci95": [
+            0.5418944286372394,
+            0.792419559060006
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.92,
+          "ci95": [
+            0.8847798037736554,
+            0.9552201962263447
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9334873949579832,
+          "ci95": [
+            0.8997387597170903,
+            0.967236030198876
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 4.9,
+          "ci95": [
+            4.816000000000001,
+            4.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 3.9,
+          "ci95": [
+            3.816,
+            3.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 2.45,
+          "ci95": [
+            2.4080000000000004,
+            2.492
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 41.153999999999996,
+          "ci95": [
+            39.24187911846557,
+            43.066120881534424
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10936.88,
+          "ci95": [
+            10909.558160694418,
+            10964.20183930558
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.000702263998100534,
+          "ci95": [
+            0.0006398490321581329,
+            0.0007646789640429352
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "event": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.68,
+          "ci95": [
+            0.5418944286372394,
+            0.792419559060006
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.92,
+          "ci95": [
+            0.8847798037736554,
+            0.9552201962263447
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9334873949579832,
+          "ci95": [
+            0.8997387597170903,
+            0.967236030198876
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 5.9,
+          "ci95": [
+            5.816000000000001,
+            5.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 4.9,
+          "ci95": [
+            4.816000000000001,
+            4.984
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 2.95,
+          "ci95": [
+            2.9080000000000004,
+            2.992
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 40.653999999999996,
+          "ci95": [
+            38.74187911846557,
+            42.566120881534424
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10928.12,
+          "ci95": [
+            10902.14072905103,
+            10954.099270948971
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0007760520002921112,
+          "ci95": [
+            0.0006887509166800144,
+            0.0008633530839042081
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "selective": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.7833333333333333,
+          "ci95": [
+            0.7582025642333723,
+            0.8084641024332944
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9283193277310923,
+          "ci95": [
+            0.8948678931204713,
+            0.9617707623417132
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 42.44799999999999,
+          "ci95": [
+            40.522176039613164,
+            44.37382396038682
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10680.18,
+          "ci95": [
+            10674.711265243222,
+            10685.648734756778
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0005574259988497943,
+          "ci95": [
+            0.0005050883111041683,
+            0.0006097636865954203
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      }
+    },
+    "capability_drift": {
+      "fixed": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.02,
+          "ci95": [
+            0.0035391680889764604,
+            0.10495686471836953
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.02,
+          "ci95": [
+            0.0035391680889764604,
+            0.10495686471836953
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.16,
+          "ci95": [
+            0.08337321362087696,
+            0.2851448096176598
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.64,
+          "ci95": [
+            0.6130139130497049,
+            0.6669860869502952
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.7065966386554621,
+          "ci95": [
+            0.6755403531085342,
+            0.7376529242023899
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 4.02,
+          "ci95": [
+            3.9807999999999995,
+            4.0592
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 3.02,
+          "ci95": [
+            2.9808,
+            3.0592
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 2.01,
+          "ci95": [
+            1.9903999999999997,
+            2.0296
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 27.362,
+          "ci95": [
+            25.6511299785197,
+            29.0728700214803
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10836.68,
+          "ci95": [
+            10822.968638147871,
+            10850.39136185213
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0007600040022225585,
+          "ci95": [
+            0.0006715043854805358,
+            0.0008485036189645812
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "event": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.02,
+          "ci95": [
+            0.0035391680889764604,
+            0.10495686471836953
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.02,
+          "ci95": [
+            0.0035391680889764604,
+            0.10495686471836953
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.16,
+          "ci95": [
+            0.08337321362087696,
+            0.2851448096176598
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.64,
+          "ci95": [
+            0.6130139130497049,
+            0.6669860869502952
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.7065966386554621,
+          "ci95": [
+            0.6755403531085342,
+            0.7376529242023899
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 4.02,
+          "ci95": [
+            3.9807999999999995,
+            4.0592
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 3.02,
+          "ci95": [
+            2.9808,
+            3.0592
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 2.01,
+          "ci95": [
+            1.9903999999999997,
+            2.0296
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 27.362,
+          "ci95": [
+            25.6511299785197,
+            29.0728700214803
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10836.36,
+          "ci95": [
+            10823.250047164081,
+            10849.46995283592
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006823400002031122,
+          "ci95": [
+            0.0006302873551622884,
+            0.000734392645243936
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "selective": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.02,
+          "ci95": [
+            0.0035391680889764604,
+            0.10495686471836953
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.16,
+          "ci95": [
+            0.08337321362087696,
+            0.2851448096176598
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.6366666666666666,
+          "ci95": [
+            0.6125259679747618,
+            0.6608073653585714
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.7064705882352941,
+          "ci95": [
+            0.6755068210405109,
+            0.7374343554300773
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 28.368,
+          "ci95": [
+            26.652274416347414,
+            30.083725583652583
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10819.22,
+          "ci95": [
+            10814.682862858584,
+            10823.757137141414
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.00060684000083711,
+          "ci95": [
+            0.0005630211844316078,
+            0.0006506588172426122
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      }
+    },
+    "unrecoverable": {
+      "fixed": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.04,
+          "ci95": [
+            0.011038652660826577,
+            0.13460337877954667
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.4766666666666666,
+          "ci95": [
+            0.46047393853196233,
+            0.4928593948013709
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.5039495798319328,
+          "ci95": [
+            0.4805808224081969,
+            0.5273183372556687
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 22.647999999999996,
+          "ci95": [
+            21.29774674730997,
+            23.998253252690024
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10142.62,
+          "ci95": [
+            10139.580025158,
+            10145.659974842001
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006183499988401309,
+          "ci95": [
+            0.000534913998939795,
+            0.0007017859987404668
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "event": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.04,
+          "ci95": [
+            0.011038652660826577,
+            0.13460337877954667
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.4766666666666666,
+          "ci95": [
+            0.46047393853196233,
+            0.4928593948013709
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.5039495798319328,
+          "ci95": [
+            0.4805808224081969,
+            0.5273183372556687
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 22.647999999999996,
+          "ci95": [
+            21.29774674730997,
+            23.998253252690024
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10142.62,
+          "ci95": [
+            10139.580025158,
+            10145.659974842001
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0005435500004386995,
+          "ci95": [
+            0.0005005391055838902,
+            0.0005865608952935088
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "selective": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.04,
+          "ci95": [
+            0.011038652660826577,
+            0.13460337877954667
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.4766666666666666,
+          "ci95": [
+            0.46047393853196233,
+            0.4928593948013709
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.5039495798319328,
+          "ci95": [
+            0.4805808224081969,
+            0.5273183372556687
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 23.147999999999996,
+          "ci95": [
+            21.79774674730997,
+            24.498253252690024
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10136.62,
+          "ci95": [
+            10133.580025158,
+            10139.659974842001
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0005189499998232349,
+          "ci95": [
+            0.0004669039201864679,
+            0.000570996079460002
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      }
+    },
+    "high_call_cost": {
+      "fixed": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.7833333333333333,
+          "ci95": [
+            0.7582025642333723,
+            0.8084641024332944
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9283193277310923,
+          "ci95": [
+            0.8948678931204713,
+            0.9617707623417132
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 3.0,
+          "ci95": [
+            3.0,
+            3.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 6.300000000000001,
+          "ci95": [
+            6.300000000000001,
+            6.300000000000001
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 37.147999999999996,
+          "ci95": [
+            35.22217603961317,
+            39.073823960386825
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10838.78,
+          "ci95": [
+            10831.640430444348,
+            10845.919569555654
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0007139579977956601,
+          "ci95": [
+            0.0006368261787303888,
+            0.0007910898168609314
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "event": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.7833333333333333,
+          "ci95": [
+            0.7582025642333723,
+            0.8084641024332944
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9283193277310923,
+          "ci95": [
+            0.8948678931204713,
+            0.9617707623417132
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 3.0,
+          "ci95": [
+            3.0,
+            3.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 6.300000000000001,
+          "ci95": [
+            6.300000000000001,
+            6.300000000000001
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 37.147999999999996,
+          "ci95": [
+            35.22217603961317,
+            39.073823960386825
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10843.38,
+          "ci95": [
+            10835.945298187553,
+            10850.814701812445
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006562740028311964,
+          "ci95": [
+            0.0006113191127288927,
+            0.0007012288929335002
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      },
+      "selective": {
+        "full_completion": {
+          "n": 50,
+          "mean": 0.0,
+          "ci95": [
+            0,
+            0.07135003417431873
+          ],
+          "interval": "Wilson"
+        },
+        "required_completion": {
+          "n": 50,
+          "mean": 0.76,
+          "ci95": [
+            0.6258705062480763,
+            0.8570274759812779
+          ],
+          "interval": "Wilson"
+        },
+        "severe_failure_episode": {
+          "n": 50,
+          "mean": 0.06,
+          "ci95": [
+            0.020614596364630478,
+            0.16217343370877002
+          ],
+          "interval": "Wilson"
+        },
+        "task_completion_rate": {
+          "n": 50,
+          "mean": 0.7833333333333333,
+          "ci95": [
+            0.7582025642333723,
+            0.8084641024332944
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "value_completion_rate": {
+          "n": 50,
+          "mean": 0.9283193277310923,
+          "ci95": [
+            0.8948678931204713,
+            0.9617707623417132
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_calls": {
+          "n": 50,
+          "mean": 2.0,
+          "ci95": [
+            2.0,
+            2.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "replanning_calls": {
+          "n": 50,
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "planning_cost_units": {
+          "n": 50,
+          "mean": 4.2,
+          "ci95": [
+            4.2,
+            4.2
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "net_realized_value_units": {
+          "n": 50,
+          "mean": 39.24799999999999,
+          "ci95": [
+            37.32217603961317,
+            41.17382396038681
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "communication_utf8_bytes": {
+          "n": 50,
+          "mean": 10686.18,
+          "ci95": [
+            10680.711265243222,
+            10691.648734756778
+          ],
+          "interval": "normal approximation across seeds"
+        },
+        "scheduler_wall_seconds": {
+          "n": 50,
+          "mean": 0.0006038160002208315,
+          "ci95": [
+            0.0005288172292507227,
+            0.0006788147711909402
+          ],
+          "interval": "normal approximation across seeds"
+        }
+      }
+    }
+  },
+  "paired_selective_minus_baseline": {
+    "fixed": {
+      "value_completion_rate": {
+        "n": 50,
+        "mean": -0.002092436974789943,
+        "ci95": [
+          -0.0023713275102977827,
+          -0.001813546439282103
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "severe_failure_episode": {
+        "n": 50,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "planning_calls": {
+        "n": 50,
+        "mean": -1.964,
+        "ci95": [
+          -1.9988642166124524,
+          -1.9291357833875475
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "net_realized_value_units": {
+        "n": 50,
+        "mean": 1.2387999999999983,
+        "ci95": [
+          1.2243519999999983,
+          1.2532479999999984
+        ],
+        "interval": "normal approximation across seeds"
+      }
+    },
+    "event": {
+      "value_completion_rate": {
+        "n": 50,
+        "mean": -0.002092436974789943,
+        "ci95": [
+          -0.0023713275102977827,
+          -0.001813546439282103
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "severe_failure_episode": {
+        "n": 50,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "planning_calls": {
+        "n": 50,
+        "mean": -1.964,
+        "ci95": [
+          -1.9988642166124524,
+          -1.9291357833875475
+        ],
+        "interval": "normal approximation across seeds"
+      },
+      "net_realized_value_units": {
+        "n": 50,
+        "mean": 1.2387999999999983,
+        "ci95": [
+          1.2243519999999983,
+          1.2532479999999984
+        ],
+        "interval": "normal approximation across seeds"
+      }
+    }
+  },
+  "limitations": [
+    "Hand-authored synthetic parameters and discrete execution model; no physics, VLM, LLM or hardware.",
+    "Event baseline is a trigger-rule surrogate with the same exact wave planner, not the original LLM planner.",
+    "Scenario priors, rewards, durations, costs and fixed period were chosen for an engineering example, not tuned on a held-out dataset.",
+    "Risk scores depend on supplied model assumptions and are not calibrated physical failure probabilities.",
+    "Communication counts serialize events, decisions and previews; ROS/HTTP overhead is excluded.",
+    "Planning cost uses synthetic utility units; no model prices or token usage are simulated.",
+    "Intervals describe seeds in these fixed synthetic regimes, not generalization to other scenes."
+  ],
+  "aggregate_fixed_regimes": {
+    "fixed": {
+      "task_completion_rate": 0.748,
+      "required_completion": 0.46,
+      "value_completion_rate": 0.8011680672268907,
+      "severe_failure_episode": 0.076,
+      "planning_calls": 3.764,
+      "replanning_calls": 2.764,
+      "planning_cost_units": 2.842,
+      "communication_utf8_bytes": 10739.568,
+      "scheduler_wall_seconds": 0.0007129807995806914
+    },
+    "event": {
+      "task_completion_rate": 0.748,
+      "required_completion": 0.46,
+      "value_completion_rate": 0.8011680672268907,
+      "severe_failure_episode": 0.076,
+      "planning_calls": 3.764,
+      "replanning_calls": 2.764,
+      "planning_cost_units": 2.842,
+      "communication_utf8_bytes": 10734.52,
+      "scheduler_wall_seconds": 0.0006682356006349437
+    },
+    "selective": {
+      "task_completion_rate": 0.6926666666666667,
+      "required_completion": 0.46,
+      "value_completion_rate": 0.7990756302521007,
+      "severe_failure_episode": 0.076,
+      "planning_calls": 1.8,
+      "replanning_calls": 0.8,
+      "planning_cost_units": 1.54,
+      "communication_utf8_bytes": 10601.676,
+      "scheduler_wall_seconds": 0.000580085599591257
+    }
+  },
+  "date": "2026-10-29",
+  "raw_artifacts": {
+    "episodes.jsonl": {
+      "relative_path": "artifacts/rename-validation/episodes.jsonl",
+      "sha256": "b5491bdfbd2cd8d1562cf6aac90980165a38af261c275e88eed2f4ad730cc17c",
+      "bytes": 512381
+    },
+    "trace.jsonl": {
+      "relative_path": "artifacts/rename-validation/trace.jsonl",
+      "sha256": "a14deaebedcd9889bcdddc360451cd45c63c0aeb86ce8e0a812c7c06a64591aa",
+      "bytes": 7503251
+    }
+  }
+}
